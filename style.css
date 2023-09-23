@@ -1,6 +1,12 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -12,7 +18,7 @@ a {
 }
 
 header {
- 
+    height: 8vh;
     display: flex;
     flex-direction:column;
     align-items: end;
@@ -24,26 +30,6 @@ header li {
     padding: 8px;
 }
 
-main{
-    text-align: center;
-   margin-top: 150px;
-}
-
-footer{
-    background-color: #f2f2f2; 
-    color:rgb(134, 132, 132);
-    padding: 10px 0px 50px;
-    margin-top: 125px;
-}
-button {
-    padding: 0px 10px 0px;
-    margin: 40px 4px;
-    height: 36px;
-    border: 1px solid blue;
-    border-radius: 4px;
-    background-color: rgb(231, 244, 235);
-    text-emphasis-color: white;
-}
 
 #left{
     float: left;
@@ -79,6 +65,32 @@ p {
     padding: 8px 0px 0px 10px;
 }
 
-input{   
-    width: 400px ;
+main{
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+   /*argin-top: 150px;*/
+}
+
+footer{
+    height: 14.8vh;
+    width: 207.5vh;
+    background-color: #f2f2f2; 
+    color:rgb(134, 132, 132);
+    align-items: flex-end;
+    /*}}padding: 10px 0px 50px;
+    margin-top: 125px;*/
+}
+
+.btn-buscador{
+    border: black solid 1px;
+}
+
+#input-buscador{
+    outline: none;
+    border: none;
 }
