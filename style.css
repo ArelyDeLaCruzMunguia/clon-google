@@ -1,0 +1,84 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.icon-buscador {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+header {
+ 
+    display: flex;
+    flex-direction:column;
+    align-items: end;
+}
+
+header li {
+    list-style-type: none;
+    float: left;
+    padding: 8px;
+}
+
+main{
+    text-align: center;
+   margin-top: 150px;
+}
+
+footer{
+    background-color: #f2f2f2; 
+    color:rgb(134, 132, 132);
+    padding: 10px 0px 50px;
+    margin-top: 125px;
+}
+button {
+    padding: 0px 10px 0px;
+    margin: 40px 4px;
+    height: 36px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: rgb(231, 244, 235);
+    text-emphasis-color: white;
+}
+
+#left{
+    float: left;
+    padding: 0px; 
+}
+#right{
+    float:right;
+    padding: 0px;  
+}
+ul {
+    list-style-type: none;
+}
+/*Esto es para todas las listas DENTRO de un li */
+ul li {
+    display: inline;
+    padding: 4px;
+}
+
+header ul li {
+    display: inline;
+    padding: 4px;
+}
+footer ul {
+    display: inline-block;
+    margin:15px 12px;
+}
+footer ul li {
+    display: inline;
+    padding: 15px;
+}
+p {
+    display: inline;
+    padding: 8px 0px 0px 10px;
+}
+
+input{   
+    width: 400px ;
+}
