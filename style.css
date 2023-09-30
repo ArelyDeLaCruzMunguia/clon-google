@@ -2,95 +2,184 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+
+body{
     padding: 0px;
     margin: 0px;
 }
 
+
+.icon-buscador{
+    /*
+    usamos display inline block porque queremos que estén pegaditos la parte de inline y block para que las propiedades de width y heigth sigan haciend efecto y hagn mi icono pequeño
+    */
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 10px 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-flex;
+    /* padding: 8px; */
+    /* padding: 8px 24px; */
+    /* padding: 8px 24px 40px 60px; */
+    padding: 4px;
+}
+
+footer ul {
+    display: inline-block;
+    margin: 15px 12px;
+}
+
+footer ul li {
+    display: inline;
+    /* padding: 8px; */
+    /* padding: 8px 24px; */
+    /* padding: 8px 24px 40px 60px; */
+    padding: 15px;
+}
+
+header {
+    display:flex;
+    height: 8vh;
+    flex-direction: column;
+    align-items: end;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 15px;
+}
+
+main {
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+footer {
+    background-color: #f2f2f2; 
+    height: 19.9vh;
+    color:#848080
+}
+
+.btn-buscador{
+    display: flex;
+    border: #d5d0d0 solid 1px;
+    border-radius: 25px;
+    align-self: center;
+    padding: 0px 10px;
+}
+
+#input-buscador {
+    display: flex;
+    outline: none;
+    border: none;
+    white-space-collapse: preserve;
+    text-wrap: nowrap;
+    padding-block: 1px;
+    padding-inline: 6px;
+    padding: 0px 100px;
+}
+
+hr {
+    border-color: #ffffff;
+    background-color:#848080 ;
+}
+
+article{
+    display: flex;
+}
+
+button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-google {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 a {
     text-decoration: none;
     color: black;
 }
-.icon-buscador {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-}
 
-header {
-    height: 8vh;
+.acceso {
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    color:white;
     display: flex;
-    flex-direction:column;
-    align-items: end;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 3px;
 }
 
-header li {
-    list-style-type: none;
-    float: left;
-    padding: 8px;
-}
-
-
-#left{
-    float: left;
-    padding: 0px; 
-}
-#right{
-    float:right;
-    padding: 0px;  
-}
-ul {
-    list-style-type: none;
-}
-/*Esto es para todas las listas DENTRO de un li */
-ul li {
-    display: inline;
-    padding: 4px;
-}
-
-header ul li {
-    display: inline;
-    padding: 4px;
-}
-footer ul {
-    display: inline-block;
-    margin:15px 12px;
-}
-footer ul li {
-    display: inline;
-    padding: 15px;
-}
-p {
-    display: inline;
-    padding: 8px 0px 0px 10px;
-}
-
-main{
-    height: 77vh;
+.Nw0Dr{
+    flex: 1 0 auto;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    align-self: flex-end;
+    border: 0;
+    justify-content: flex-end;
+}
+
+.b4yCbb
+{
+    flex: 1 0 auto;
+    display: flex;
     align-items: center;
-   /*argin-top: 150px;*/
-}
-
-footer{
-    height: 14.8vh;
-    width: 207.5vh;
-    background-color: #f2f2f2; 
-    color:rgb(134, 132, 132);
-    align-items: flex-end;
-    /*}}padding: 10px 0px 50px;
-    margin-top: 125px;*/
-}
-
-.btn-buscador{
-    border: black solid 1px;
-}
-
-#input-buscador{
+    border: 0;
+    background: transparent;
     outline: none;
-    border: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px; 
 }
+
+.gb_d{
+    display: flex;
+    box-sizing: border-box;
+    margin: 3px;
+}
+
+#botones-google{
+    display: flex;
+    justify-content: center;
+}
+
+.lupa{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.gb_h {
+    display: flex;
+    align-items: end;
+    margin-top: 2px;
+}
+
