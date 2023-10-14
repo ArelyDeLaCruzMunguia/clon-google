@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <!-- link:icon => cambiar el href por el tuyo -->
+    <!-- link:icon => es eñ icono que aparece en la pestaña-->
     <link rel="icon" href="assets/gsa_android_144dp.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,31 +14,34 @@
 </head>
 
 <body>
+    <!-- Es el encabezado -->
     <header>
         <!-- Listas horizontales: display inline, alinear -->
-        <ul>
-            <li><a href="https://mail.google.com/mail/u/0/?ogbl#inbox" target="_blank">Gmail</a></li>
-            <li><a href="https://www.google.com.mx/imghp?hl=es&authuser=0&ogbl">Imágenes</a>
-            </li>
-            <li>
-                <a class="gb_d" aria-label="Google Apps"
-                    href="https://www.google.com.mx/intl/es-419/about/products?tab=rh" aria-expanded="false"
-                    role="button" tabindex="0" target="_top">
-                    <svg class="gb_h" width="32" focusable="false" viewBox="0 0 24 24">
-                        <path
-                            d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
-                        </path>
-                    </svg></a>
-            </li>
-            <li>
-                <button class="acceso">Acceder</button>
-            </li>
-        </ul>
+        <nav>
+            <ul class="nav-right-section">
+                <li><a href="https://mail.google.com/mail/u/0/?ogbl#inbox" target="_blank">Gmail</a></li>
+                <li><a href="https://www.google.com.mx/imghp?hl=es&authuser=0&ogbl">Imágenes</a>
+                </li>
+                <li>
+                    <a class="gb_d" aria-label="Google Apps"
+                        href="https://www.google.com.mx/intl/es-419/about/products?tab=rh" aria-expanded="false"
+                        role="button" tabindex="0" target="_top">
+                        <svg class="gb_h" width="32" focusable="false" viewBox="0 0 24 24">
+                            <path
+                                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+                            </path>
+                        </svg></a>
+                </li>
+                <li>
+                    <a href="https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https://www.google.es/&ec=GAZAmgQ"><button class="acceso">Iniciar sesión</button></a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
             <div class="logo-google">
-                <img src="/assets/googlelogo_color_272x92dp.png" alt="Logo">
+                <img id="logo" src="/assets/googlelogo_color_272x92dp.png" alt="Logo">
             </div>
         </section>
         <section>
@@ -87,32 +90,49 @@
                 </div>
             </article>
             <article id="botones-google">
-                    <button>Buscar con google</button>
-                    <button>Voy a tener suerte</button>
+                <button>Buscar con google</button>
+                <a href="https://www.google.com/doodles"><button>Voy a tener suerte</button></a>
             </article>
         </section>
     </main>
     <footer>
-        <section>
+        <div class="footer-loc">
             <ul>
                 <li>México</li>
             </ul>
-        </section>
+        </div>
         <hr />
-        <section>
-            <ul id="left">
-                <li>Sobre Google</li>
-                <li>Publicidad</li>
-                <li>Negocios</li>
-                <li>Cómo funciona la Búsqueda</li>
+        <div class="footer-elements">
+            <ul class="footer-left">
+                <li><a
+                        href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre
+                        Google</a></li>
+                <li><a
+                        href="https://www.google.com/intl/es-419_mx/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+                </li>
+                <li><a
+                        href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios
+                </li>
+                <li><a href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a></li>
             </ul>
-            <ul id="right">
-                <li>Privacidad</li>
-                <li>Condiciones</li>
-                <li>Preferencias</li>
+            <ul class="footer-right">
+                <li><a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a></li>
+                <li><a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a></li>
+                <li><a href="#" class="preferences-enlace">Preferencias</a>
+                    <ul class="preferens-list">
+                        <li><a>Configuración de búsqueda</a></li>
+                        <li><a>Búsqueda avanzada</a></li>
+                        <li><a>Tus datos en la Búsqueda</a></li>
+                        <li><a>Historial de búsqueda</a></li>
+                        <li><a>Buscar en Ayuda</a></li>
+                        <li><a>Enviar comentarios</a></li>
+                        <li><a>Tema oscuro:desactivado</a></li>
+                    </ul>
+                </li>
             </ul>
-        </section>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
