@@ -239,3 +239,21 @@ align-items: flex-start;
     justify-content: space-evenly;
 }
 
+/*Comportamiento del link cuando el mouse está encima*/
+a:hover {
+    text-decoration: underline;
+}
+
+/*Comportamiento del link el resto del tiempo*/
+a:link {
+    text-decoration: none;
+    /*colores*/
+    color:rgba(0,0,0,.87);
+}
+
+/*Comportamiento del link cuando el link fue visitado*/
+a:visited {
+    text-decoration: none;
+    /*colores*/
+    color:rgba(0,0,0,.87);
+}
